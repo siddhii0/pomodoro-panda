@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Panda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Settings</h2>
+      <div class="options">
+        <label>Focus Minutes: <input type="number" id="focusTime" value="25" min="1"></label><br>
+        <label>Break Minutes: <input type="number" id="breakTime" value="5" min="1"></label><br>
+        <label><input type="checkbox" id="autoStart"> Auto Start</label><br><br>
+        <label>Background Color: <input type="color" id="bgColor" value="#DAEBE3"></label><br>
+        <button id="saveOptions">Save</button>
+      </div>
+      <div class="history">
+        <h3>History</h3>
+        <ul id="historyList"></ul>
+        <button id="clearHistory">Clear History</button>
+      </div>
+    </aside>
+
+    <main class="container">
+      <h1>Pomodoro  🐼</h1>
+      <img src="panda.gif" alt="Cute Panda" class="panda" />
+      <h2 id="time">25:00</h2>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+      <p id="status">Focus Time</p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
